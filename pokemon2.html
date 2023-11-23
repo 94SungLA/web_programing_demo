@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKM</title>
+</head>
+
+<body>
+    <h1>我最喜歡的神奇寶貝:</h1>
+    <hr>
+    <div id="poke">
+        <img id="pokephoto"
+            src="https://tw.portal-pokemon.com/play/resources/pokedex/img/pm/134d26303c22ac0e0173bdf5121a3a3aae10e36c.png"
+            width="200" height="200">
+        <br>
+        <a id="pokelink" href="https://tw.portal-pokemon.com/play/pokedex/0095">👉大岩蛇👈</a>
+        <h3>圖鑑版本</h3>
+        <ul id="pokeintro">
+            <li>會一邊在地底挖掘前進，一邊吸收各種堅硬的物體，藉此讓身體變得更加結實。</li>
+            <li>彎曲扭動巨大結實的身體，以時速８０公里的猛烈勢頭挖掘前進。</li>
+            <li>巨石連綴而成的身姿宛如大蛇。會引發天搖地動潛入地下深處，吞噬岩石形成隧道供自己前進。</li>
+        </ul>
+        <table id="table1" border="1">
+            <tr id="tr1">
+                <th>名稱</th>
+                <th>屬性</th>
+                <th>身高</th>
+                <th>體重</th>
+                <th>分類</th>
+                <th>特性</th>
+                <th>能力</th>
+            </tr>
+            <tr>
+                <td>大岩蛇</td>
+                <td>岩石 地面</td>
+                <td>8.8m</td>
+                <td>210.0kg</td>
+                <td>岩蛇寶可夢</td>
+                <td>堅硬腦袋 結實</td>
+                <td>HP:3 攻擊:3 防禦:10 特攻:2 特防:3 速度:5</td>
+            </tr>
+        </table>
+        <input id="btn" type="button" value="進化!!!">
+        <br>
+        <a href="index.html">👉回主頁👈</a>
+    </div>
+
+
+
+    <style>
+        #poke {
+            font-size: xx-large;
+            color: rgb(170, 150, 249);
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin: 80;
+            background-color: rgb(102, 107, 105);
+        }
+
+        #pokeintro {
+            font-size: xx-large;
+            position: relative;
+            color: rgb(199, 214, 209);
+        }
+
+        h1 {
+            color: rgb(88, 88, 150);
+        }
+
+        #table1 {
+            border-collapse: collapse;
+            font-size: x-large;
+            border: solid rgb(0, 0, 0);
+            background-color: rgb(234, 222, 208);
+            color: rgb(43, 46, 45);
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        #tr1 {
+            color: rgb(255, 255, 255);
+            background-color: rgb(170, 150, 249);
+        }
+
+        #btn {
+            font-size: x-large;
+            text-align: center;
+            color: rgb(26, 44, 38);
+        }
+    </style>
+    <script>
+        function clickHandler() {
+            document.getElementById("pokephoto").src =
+                "https://tw.portal-pokemon.com/play/resources/pokedex/img/pm/47aeb3e1d1ff57e2d791882d9d4252a24bb2ad0d.png";
+            document.getElementById("pokelink").href = "https://tw.portal-pokemon.com/play/pokedex/0208";
+            document.getElementById("pokelink").innerHTML = "👉大鋼蛇👈";
+            document.getElementById("pokeintro").innerHTML =
+                "<li>據說當大岩蛇活到了１００年以上，身體的成分就會變得如同鑽石一般。</li><li>人們認為牠的身體是因為堆積了和泥土一起吞下的鐵質，才會發生變化的。</li><li>憑藉奇異的道具進化而成。全身塗滿鋼鐵粒子，身軀極為堅硬，即便金剛石也無法傷其分毫。</li>";
+            document.getElementById("table1").innerHTML = "<tr id=\"tr1\"><th>名稱</th><th>屬性</th><th>身高</th><th>體重</th><th>分類</th><th>特性</th><th>能力</th></tr><td>大岩蛇</td><td> 鋼 地面</td ><td>9.2m</td><td>400.0kg</td><td>鐵蛇寶可夢</td><td>堅硬腦袋 結實</td><td>HP:5 攻擊:5 防禦:12 特攻:4 特防:4 速度:2</td>"
+        }
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", clickHandler, false);
+    </script>
+</body>
+
+</html>

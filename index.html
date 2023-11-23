@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self_intro</title>
+</head>
+
+<body>
+    <h1>About me</h1>
+    <hr>
+    <h1 class="zw">自我介紹</h1>
+
+    <div id="intro">
+        我是資工一A宋辰星，很高興認識你2ㄏ2ㄏ
+        <br>
+        這是我最喜歡的神奇寶貝👇
+        <br>
+        第一隻神奇寶貝:
+        <a href="pokemon1.html">卡比獸</a>
+        <br>
+        第二隻神奇寶貝:
+        <a href="pokemon2.html">大岩蛇</a>
+        <br>
+        <input id="btn" type="button" value="聖誕節快樂">
+        <br>
+        <div id="board"></div>
+        <br>
+        <a href="8puzzle.html">👉8-puzzle👈</a>
+    </div>
+
+    <style>
+        #intro {
+            font-size: xx-large;
+            text-align: center;
+            color: rgb(3, 3, 1);
+        }
+
+        h1 {
+            color: rgb(88, 88, 150);
+        }
+
+        .zw {
+            font-size: x-large;
+            text-align: center;
+            color: rgb(4, 50, 35);
+        }
+
+        a {
+            color: rgb(116, 195, 150);
+        }
+
+        #btn {
+            font-size: x-large;
+            text-align: center;
+            color: rgb(26, 44, 38);
+        }
+    </style>
+
+    <script>
+        function clickHandler() {
+            var board = document.getElementById("board");
+            board.innerHTML = "聖誕節快樂!!!!!!!!!!!!";
+            board.style = "color: green;";
+            console.log("    ^    ");
+            console.log("   ^^^   ");
+            console.log("  ^^^^^  ");
+            console.log("   ^^^   ");
+            console.log("  ^^^^^  ");
+            console.log(" ^^^^^^^ ");
+            console.log("  ^^^^^  ");
+            console.log(" ^^^^^^^ ");
+            console.log("^^^^^^^^^");
+            console.log("   ###   ");
+            console.log("   ###   ");
+            console.log("   ###   ");
+
+        }
+        var button = document.getElementById("btn");
+        button.addEventListener("click", clickHandler, false);
+    </script>
+
+</body>
+
+</html>
+<!-- 432 321 210-->
