@@ -1,66 +1,63 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>8 Puzzle Game</title>
     <style>
-        .puzzle {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 10px;
-            width: 300px;
-            height: 300px;
-            margin: 0 auto;
-        }
+      .puzzle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+      }
 
-        .puzzle-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-            background-color: #ccc;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+      .puzzle-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        background-color: #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-        #QQ {
-            font-size: xx-large;
-            text-align: center;
-        }
+      #QQ {
+        font-size: xx-large;
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="puzzle">
-        <div class="puzzle-item">1</div>
-        <div class="puzzle-item">2</div>
-        <div class="puzzle-item">3</div>
-        <div class="puzzle-item">4</div>
-        <div class="puzzle-item">5</div>
-        <div class="puzzle-item">6</div>
-        <div class="puzzle-item">7</div>
-        <div class="puzzle-item">8</div>
-        <div class="puzzle-item"></div>
+      <div class="puzzle-item">1</div>
+      <div class="puzzle-item">2</div>
+      <div class="puzzle-item">3</div>
+      <div class="puzzle-item">4</div>
+      <div class="puzzle-item">5</div>
+      <div class="puzzle-item">6</div>
+      <div class="puzzle-item">7</div>
+      <div class="puzzle-item">8</div>
+      <div class="puzzle-item"></div>
     </div>
     <div id="QQ">
-        然後窩就不會ㄌQAQ(可以按按看...)
-        <br>
-        <a href="index.html">👉回主頁👈</a>
+      然後窩就不會ㄌQAQ(可以按按看...)
+      <br />
+      <a href="index.html">👉回主頁👈</a>
     </div>
 
     <script>
-        function showPopup() {
-            alert("我不會QAQ");
-        }
-        var btn = document.getElementsByClassName("puzzle-item");
-        for (var i = 0; i < btn.length; i++) {
-            btn[i].addEventListener("click", showPopup);
-        }
-
+      function showPopup() {
+        alert("我不會QAQ");
+      }
+      var btn = document.getElementsByClassName("puzzle-item");
+      for (var i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", showPopup);
+      }
     </script>
-</body>
-
+  </body>
 </html>
